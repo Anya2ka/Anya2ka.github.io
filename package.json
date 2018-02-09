@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+   "scripts": {
+    "start": "./node_modules/.bin/gulp scss:watch"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Anya2ka/Anya2ka.github.io.git"
@@ -13,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/Anya2ka/Anya2ka.github.io/issues"
   },
-  "homepage": "https://Anya2ka.github.io/"
+  "homepage": "https://Anya2ka.github.io/",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
 }
