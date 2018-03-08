@@ -8,6 +8,13 @@ gulp.task('scss', function (){
         .pipe(gulp.dest(path.join('.', 'dist', 'css')));
 });
 
+gulp.task('images', function () {
+    gulp.src(path.join('.', 'assets', 'images', '**'))
+        .pipe(gulp.dest(path.join('.', 'dist', 'images')));
+});
+
 gulp.task('scss:watch', function (){
     gulp.watch(path.join('.', 'assets', 'scss', '**', '*.scss'), ['scss'])
 });
+
+gulp.task('default', ['images', 'scss', 'scss:watch'])
